@@ -1,0 +1,10 @@
+Brett Cannon, who is currently in charge of Python's development process, has announced on Python core workflow mailing list that Python will be moving to GitHub. In conversation with InfoQ, Cannon explained that the process that led to the current decision went on for over a year and took into account three different proposals:
+
+Creating forge.python.org to host Python repositories
+Migrating to Git and GitHub and Phabricator
+Migrating to Git and GitLab
+The final decision was to prefer GitHub, and came down to three main factors:
+
+Rough equivalence of GitHub and GitLab in terms of features; specifically, Cannon wrote, the fact that GitLab is open source was not considered in itself a deciding factor.
+Prevalence of developers familiar with GitHub amongst core developers and external contributors. On the other hand, a few developers declared themselves against moving to GitHub, but no one said they would not use it, if the community decided to go that route.
+Guido van Rossum’s preference, which Cannon considered valuable to avoid the risk of potentially alienating him, though his contribution is only occasional nowdays.

@@ -1,0 +1,3 @@
+No Starch Press’ Python Playground provides a fairly large and varied collection of projects that aim to show how Python can be used in such different contexts as creating ASCII art, birds simulation, interfacing to Raspberry Pi, and more. InfoQ has spoken to the book’s author, Mahesh Venkitachalam.
+
+Python Playground is not exactly an introductory Python book, since it targets programmers that are already comfortable with Python and want to further improve their skills and knowledge of the language. Still, the book does a reasonably good job at explaining all relevant details and make sure that readers get a clear picture of what is going on.
