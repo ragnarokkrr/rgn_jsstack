@@ -8,12 +8,27 @@ exports.save = function(doc) {
 };
 
 exports.first = function(obj) {
-	return db.filter(function(doc) {
+	return db.filter(matchEveryPropertyInObj).shift();
+
+	function matchEveryPropertyInObj(doc) {
 		for ( var key in obj) {
 			if (doc[key] != obj[key]) {
 				return false;
 			}
 		}
 		return true;
-	}).shift();
-}
+	}
+};
+
+exports.clear = function() {
+	db = [];
+};
+
+exports.save = function(doc, cb) {
+	db.push(doc);
+	if (cb) {
+		setTimeout(function() {
+			cb();
+		}, 1000);
+	}
+};
