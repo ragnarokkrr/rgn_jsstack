@@ -1,0 +1,11 @@
+{
+  "name": "rxcycle",
+  "version": "1.0.0",
+  "description": "https://glebbahmutov.com/blog/node-server-with-rx-and-cycle/",
+  "main": "00-node-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
