@@ -100,14 +100,16 @@ console.log(repeatedly(10, function(exp) {
 function always(VALUE) {
   return function() {
     return VALUE;
-  }
+  };
 }
+exports.always = always;
 
-var f = always(function() {})
+
+var f = always(function() {});
 
 console.log((f() === f()));
 
-var g = always(function() {})
+var g = always(function() {});
 
 console.log((f() === g()));
 
@@ -131,7 +133,7 @@ function invoker(NAME, METHOD) {
       });
   };
 }
-
+exports.invoker = invoker;
 
 var rev = invoker('reverse', Array.prototype.reverse);
 
@@ -241,6 +243,8 @@ function checker( /* validators */ ) {
   };
 }
 
+exports.checker = checker;
+
 var alwaysPasses = checker(always(true), always(true));
 
 console.log(alwaysPasses({}));
@@ -259,7 +263,7 @@ function validator(message, fun) {
   return f;
 }
 
-
+exports.validator = validator;
 var gonnaFail = checker(validator("ZOMG!", always(false)));
 
 console.log(gonnaFail(100));
